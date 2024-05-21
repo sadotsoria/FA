@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shure Failure Analysis Database</title>
+</head>
+<body>
+    <h1>MXA Failure Data Registry</h1>
+    <form id="fallaForm">
+        <label for="unidad">Unidad:</label>
+        <input type="text" id="unidad" name="unidad" required><br>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+        <button type="submit">Agregar Falla</button>
+    </form>
+    <h2>Listado de Fallas</h2>
+    <table id="fallasTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Unidad</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
